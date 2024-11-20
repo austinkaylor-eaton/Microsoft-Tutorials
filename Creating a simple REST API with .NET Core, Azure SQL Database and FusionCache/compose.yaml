@@ -4,9 +4,11 @@
     build:
       context: .
       dockerfile: WebApi/Dockerfile
-      
+  
   sqlserver:
-    image: mcr.microsoft.com/mssql/server:2022-latest
+    build:
+      context: .
+      dockerfile: SQLServer.Dockerfile
     environment:
       - SA_PASSWORD=YourStrong!Passw0rd
       - ACCEPT_EULA=Y
