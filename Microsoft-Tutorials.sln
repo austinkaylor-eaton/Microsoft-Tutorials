@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creating a simple REST API with .NET Core, Azure SQL Database and FusionCache", "Creating a simple REST API with .NET Core, Azure SQL Database and FusionCache", "{AF7C6C20-A6BE-4E51-9692-5FAFBEFD4C7A}"
+	ProjectSection(SolutionItems) = preProject
+		Creating a simple REST API with .NET Core, Azure SQL Database and FusionCache\Creating a simple REST API with .NET Core, Azure SQL Database and FusionCache.sln = Creating a simple REST API with .NET Core, Azure SQL Database and FusionCache\Creating a simple REST API with .NET Core, Azure SQL Database and FusionCache.sln
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
