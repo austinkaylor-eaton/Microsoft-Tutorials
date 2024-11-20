@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/mssql/server:2022-latest
 
-ENV SA_PASSWORD=YourStrong!Passw0rd
+ENV MSSQL_SA_PASSWORD=YourStrong!Passw0rd
 ENV ACCEPT_EULA=Y
 
 EXPOSE 1433
