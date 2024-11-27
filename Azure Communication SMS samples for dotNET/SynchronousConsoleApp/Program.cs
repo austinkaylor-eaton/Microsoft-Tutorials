@@ -24,3 +24,6 @@ IHost host = builder.Build();
 
 AzureCommunicationServiceOptions azureCommunicationServiceOptions = host.Services.GetRequiredService<IOptions<AzureCommunicationServiceOptions>>().Value;
 
+AzureCommunicationServiceSmsClient client = new(azureCommunicationServiceOptions);
+client.SendMessageToPhoneNumber("+14127132060", "Hello, World!");
+

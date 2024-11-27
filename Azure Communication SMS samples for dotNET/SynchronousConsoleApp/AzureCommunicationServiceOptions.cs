@@ -11,9 +11,9 @@ namespace SynchronousConsoleClient;
 public sealed class AzureCommunicationServiceOptions
 {
     private const string ConnectionStringRegEx = @"^endpoint=https:\/\/[^.]+\.unitedstates\.communication\.azure\.com\/;accesskey=[A-Za-z0-9]{84}$";
-    private const string ServiceEndpointRegEx = @"^https:\/\/[^.]+\.unitedstates\.communication\.azure\.com\/$";
+    private const string ServiceEndpointRegEx = @"^https:\/\/[^.]+\.unitedstates\.communication\.azure\.com$";
     private const string E164PhoneNumberRegEx = @"^\+?[1-9]\d{1,14}$";
-    public static readonly string ConfigurationSectionName = nameof(AzureCommunicationServiceOptions).AsSpan(nameof(AzureCommunicationServiceOptions).Length - "Options".Length).ToString();
+    public static readonly string ConfigurationSectionName = nameof(AzureCommunicationServiceOptions).AsSpan(0,nameof(AzureCommunicationServiceOptions).Length - "Options".Length).ToString();
 
     /// <summary>
     /// The service endpoint for the Azure Communication Service.

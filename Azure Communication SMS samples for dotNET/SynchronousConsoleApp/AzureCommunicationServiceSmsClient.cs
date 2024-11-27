@@ -13,14 +13,15 @@ public class AzureCommunicationServiceSmsClient(AzureCommunicationServiceOptions
     /// Sends an SMS message synchronously to another US-based phone number
     /// </summary>
     /// <param name="phoneNumber">The US-based phone number to send the SMS message to</param>
-    public void SendMessageToPhoneNumber(string phoneNumber)
+    /// <param name="message">The message sent to the phone number</param>
+    public void SendMessageToPhoneNumber(string phoneNumber, string message)
     {
         try
         {
             SmsSendResult sendResult = _client.Send(
                 from: azureCommunicationServiceOptions.PhoneNumber, // Your E.164 formatted from phone number used to send SMS
                 to: phoneNumber, // E.164 formatted recipient phone number
-                message: "Hi");
+                message: message);
             Console.WriteLine($"Sms id: {sendResult.MessageId}");
         }
         catch (Exception e)
