@@ -14,11 +14,11 @@ public class AzureCommunicationServiceSmsClient(AzureCommunicationServiceOptions
     /// </summary>
     /// <param name="phoneNumber">The US-based phone number to send the SMS message to</param>
     /// <param name="message">The message sent to the phone number</param>
-    public void SendMessageToPhoneNumber(string phoneNumber, string message)
+    public async Task SendMessageToPhoneNumber(string phoneNumber, string message)
     {
         try
         {
-            SmsSendResult sendResult = _client.Send(
+            SmsSendResult sendResult = await _client.SendAsync(
                 from: azureCommunicationServiceOptions.PhoneNumber, // Your E.164 formatted from phone number used to send SMS
                 to: phoneNumber, // E.164 formatted recipient phone number
                 message: message);

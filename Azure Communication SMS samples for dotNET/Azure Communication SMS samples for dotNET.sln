@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronousConsoleApp", "SynchronousConsoleApp\SynchronousConsoleApp.csproj", "{9CA33516-CA3E-4C84-916E-4DE23D9CF183}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncConsoleApp", "AsyncConsoleApp\AsyncConsoleApp.csproj", "{78AC0B99-21B9-44CE-9051-64FD9C843D07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{9CA33516-CA3E-4C84-916E-4DE23D9CF183}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +18,5 @@ Global
 		{9CA33516-CA3E-4C84-916E-4DE23D9CF183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CA33516-CA3E-4C84-916E-4DE23D9CF183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CA33516-CA3E-4C84-916E-4DE23D9CF183}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78AC0B99-21B9-44CE-9051-64FD9C843D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78AC0B99-21B9-44CE-9051-64FD9C843D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78AC0B99-21B9-44CE-9051-64FD9C843D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78AC0B99-21B9-44CE-9051-64FD9C843D07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
