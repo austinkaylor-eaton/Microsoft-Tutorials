@@ -6,12 +6,10 @@
 4. Clone the repository
 
 # Projects
-## [AsyncConsoleApp](./AsyncConsoleApp)
-
-## [SynchronousConsoleApp](./SynchronousConsoleApp)
+## [ConsoleApp](./ConsoleApp)
 This sample demonstrates how to send an SMS message to an individual or a group of recipients.
 
-This sample sends SMS messages synchronously between two phone numbers.
+This sample sends SMS messages asynchronously between two phone numbers.
 
 # Running each project
 1. Open the project an IDE of your choice (Visual Studio, Visual Studio Code, Rider, etc.)
@@ -21,7 +19,8 @@ This sample sends SMS messages synchronously between two phone numbers.
       "AzureCommunicationServices": {
         "ServiceEndpoint": "<azure communication service endpoint>",
         "PrimaryKey": "<azure communication service primary key>",
-        "PrimaryConnectionString": "<azure communication service primary connection string>"
+        "PrimaryConnectionString": "<azure communication service primary connection string>",
+        "PhoneNumber": "<phone number used to send SMS messages>"
       }
     }
     ```
