@@ -12,6 +12,7 @@ public sealed class AzureCommunicationServiceOptions
 {
     private const string ConnectionStringRegEx = @"^endpoint=https:\/\/[^.]+\.unitedstates\.communication\.azure\.com\/;accesskey=[A-Za-z0-9]{84}$";
     private const string ServiceEndpointRegEx = @"^https:\/\/[^.]+\.unitedstates\.communication\.azure\.com\/$";
+    private const string E164PhoneNumberRegEx = @"^\+?[1-9]\d{1,14}$";
     public static readonly string ConfigurationSectionName = nameof(AzureCommunicationServiceOptions).AsSpan(nameof(AzureCommunicationServiceOptions).Length - "Options".Length).ToString();
 
     /// <summary>
@@ -39,10 +40,16 @@ public sealed class AzureCommunicationServiceOptions
     public string PrimaryConnectionString { get; set; }
     
     /// <summary>
+    /// Represents the <a href="https://www.itu.int/rec/T-REC-E.164/en">E.164</a> compliant phone number to send the SMS message from.
+    /// </summary>
+    [Required]
+    [RegularExpression(E164PhoneNumberRegEx, ErrorMessage = "The phone number must be in E.164 format.")]
+    public string PhoneNumber { get; set; }
+    
+    /// <summary>
     /// The Secondary Key for the Azure Communication Service.
     /// </summary>
     /// <example>7AD4CaDdI6kZ1f34lOJvRIz71orYVJHNzQd0uWqwE4fRrQcSMLOOJQQJ99AKACULyCpdHlM5AAAAAZCSXbZd</example>
-    [Required]
     public string SecondaryKey { get; set; }
     
     /// <summary>
