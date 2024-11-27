@@ -6,6 +6,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>SynchronousConsoleClient</RootNamespace>
+        <UserSecretsId>20ba5003-da31-4b72-ac6d-0a35276941e4</UserSecretsId>
     </PropertyGroup>
     
     <ItemGroup>
