@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>SynchronousConsoleClient</RootNamespace>
+        <UserSecretsId>20ba5003-da31-4b72-ac6d-0a35276941e4</UserSecretsId>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Azure.Communication.Sms" Version="1.0.1" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="9.0.*" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.*" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.*" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.*" />
+        <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.*" />
+        <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="9.0.*" />
+    </ItemGroup>
+
+</Project>
