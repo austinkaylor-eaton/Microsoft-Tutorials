@@ -2,7 +2,7 @@
 > Back to [Solution README](../README.md)
 
 ## About
-This tutorial is a follow-along of the []() tutorial on Microsoft Learn.
+This tutorial is a follow-along of the [Quickstart: Build your first Orleans app with ASP.NET Core](https://learn.microsoft.com/en-us/dotnet/orleans/quickstarts/build-your-first-orleans-app?tabs=visual-studio) tutorial on Microsoft Learn.
 
 ## Objectives
 
