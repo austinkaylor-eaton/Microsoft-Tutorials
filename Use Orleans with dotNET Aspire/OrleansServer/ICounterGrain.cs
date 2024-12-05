@@ -1,6 +1,8 @@
+using Orleans;
+
 namespace OrleansServer;
 
-public interface ICounterGrain
+public interface ICounterGrain: IGrainWithStringKey
 {
     ValueTask<int> Get();
     ValueTask<int> Increment();
