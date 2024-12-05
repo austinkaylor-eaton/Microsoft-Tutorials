@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Communication SMS samples for dotNET ", "Azure Communication SMS samples for dotNET ", "{796395DB-A7EC-4905-A5AD-8060514EA4BE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create a minimal Orleans application", "Create a minimal Orleans application", "{7C1ED452-9A1D-45BD-A8EB-0A6FB34B4CE2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
