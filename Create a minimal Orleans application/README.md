@@ -26,3 +26,7 @@ This project is the host for the Orleans cluster.
 - [Visual Studio Code](https://code.visualstudio.com/), [Visual Studio](https://visualstudio.microsoft.com/), [JetBrains Rider](https://www.jetbrains.com/rider/), or another IDE of your choice
 
 ## Running Locally
+1. Run the [OrleansSilo](./OrleansSilo) project first.
+2. Once the OrleansSilo project is running, run the [OrleansClient](./OrleansClient) project.
+3. You should see the output from the OrleansSilo project in the terminal window. The output should be `SayHello message received: greeting = "Hi friend!"`
+4. Confirm you alwos see output from the OrleansClient project in the terminal window. The output should be `Client said: "Hi friend!", so HelloGrain says: Hello!`'
