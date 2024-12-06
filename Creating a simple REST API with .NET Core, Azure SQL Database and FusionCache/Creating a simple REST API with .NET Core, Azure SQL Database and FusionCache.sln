@@ -3,24 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{0C967F29-5ED6-4D5A-8EB7-42C423D44801}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CDE746A1-756E-44B4-AD5C-BEDC9095AFB8}"
-	ProjectSection(SolutionItems) = preProject
-		compose.yaml = compose.yaml
-		SQLServer.Dockerfile = SQLServer.Dockerfile
-		SQLServer.sh = SQLServer.sh
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "AppHost\AppHost.csproj", "{429EF541-FCF2-4180-BA12-45C73FC8C988}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "ServiceDefaults\ServiceDefaults.csproj", "{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Scripts", "SQL Scripts", "{C3C340B9-9C93-434B-9990-4A24AA8BE436}"
-	ProjectSection(SolutionItems) = preProject
-		SQL Scripts\SampleDB.sql = SQL Scripts\SampleDB.sql
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,17 +12,5 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C967F29-5ED6-4D5A-8EB7-42C423D44801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C967F29-5ED6-4D5A-8EB7-42C423D44801}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C967F29-5ED6-4D5A-8EB7-42C423D44801}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C967F29-5ED6-4D5A-8EB7-42C423D44801}.Release|Any CPU.Build.0 = Release|Any CPU
-		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
