@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Communication SMS sam
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create a minimal Orleans application", "Create a minimal Orleans application", "{7C1ED452-9A1D-45BD-A8EB-0A6FB34B4CE2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build your first Orleans app with ASPNET Core", "Build your first Orleans app with ASPNET Core", "{C097B47E-4795-4151-8653-A9856AEAB60D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
