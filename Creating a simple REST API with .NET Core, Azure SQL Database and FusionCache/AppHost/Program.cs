@@ -15,10 +15,14 @@ IResourceBuilder<SqlServerServerResource> sqlserver = builder.AddSqlServer("sqls
     .WithLifetime(ContainerLifetime.Persistent);
 
 // Add the database to the application model so that it can be referenced by other resources.
-IResourceBuilder<SqlServerDatabaseResource> database = sqlserver.AddDatabase("SampleDB");
+IResourceBuilder<SqlServerDatabaseResource> database = sqlserver.AddDatabase("database");
 
-builder.AddProject<Projects.WebApi>("apiservice")
+IResourceBuilder<RedisResource> cache = builder.AddRedis("cache");
+
+builder.AddProject<Projects.WebApi>("api")
     .WithReference(database)
-    .WaitFor(database);
+    .WaitFor(database)
+    .WithReference(cache)
+    .WaitFor(cache);
 
 builder.Build().Run();
