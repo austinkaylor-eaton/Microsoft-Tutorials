@@ -9,7 +9,7 @@ public sealed class UrlShortenerGrain(
 {
     public async Task SetUrl(string fullUrl)
     {
-        state.State = new()
+        state.State = new UrlDetails
         {
             ShortenedRouteSegment = this.GetPrimaryKeyString(),
             FullUrl = fullUrl

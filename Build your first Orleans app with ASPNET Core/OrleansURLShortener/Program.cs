@@ -1,4 +1,3 @@
-using Orleans.Runtime;
 using OrleansURLShortener;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -38,7 +37,7 @@ app.MapGet("/shorten",
         await shortenerGrain.SetUrl(url);
 
         // Return the shortened URL for later use
-        UriBuilder resultBuilder = new UriBuilder(host)
+        UriBuilder resultBuilder = new(host)
         {
             Path = $"/go/{shortenedRouteSegment}"
         };
@@ -56,7 +55,7 @@ app.MapGet("/go/{shortenedRouteSegment:required}",
         string url = await shortenerGrain.GetUrl();
 
         // Handles missing schemes, defaults to "http://".
-        UriBuilder redirectBuilder = new UriBuilder(url);
+        UriBuilder redirectBuilder = new(url);
 
         return Results.Redirect(redirectBuilder.Uri.ToString());
     });
