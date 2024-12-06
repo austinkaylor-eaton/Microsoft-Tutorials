@@ -2,11 +2,11 @@ IDistributedApplicationBuilder builder = DistributedApplication.CreateBuilder(ar
 
 // SQL Server container is configured with an auto-generated password by default
 // but doesn't support any auto-creation of databases or running scripts on startup so we have to do it manually.
-var sqlserver = builder.AddSqlServer("sqlserver")
+IResourceBuilder<SqlServerServerResource> sqlserver = builder.AddSqlServer("sqlserver")
     // Mount the init scripts directory into the container.
     .WithBindMount("./sqlserverconfig", "/usr/config")
     // Mount the SQL scripts directory into the container so that the init scripts run.
-    .WithBindMount("../DatabaseContainers.ApiService/data/sqlserver", "/docker-entrypoint-initdb.d")
+    .WithBindMount("../SQL Scripts", "/docker-entrypoint-initdb.d")
     // Run the custom entrypoint script on startup.
     .WithEntrypoint("/usr/config/entrypoint.sh")
     // Configure the container to store data in a volume so that it persists across instances.
