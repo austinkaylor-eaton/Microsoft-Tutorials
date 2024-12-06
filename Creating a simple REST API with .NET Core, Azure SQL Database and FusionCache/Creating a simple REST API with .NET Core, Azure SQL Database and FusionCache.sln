@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		SQLServer.sh = SQLServer.sh
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppHost", "AppHost\AppHost.csproj", "{429EF541-FCF2-4180-BA12-45C73FC8C988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDefaults", "ServiceDefaults\ServiceDefaults.csproj", "{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,5 +30,13 @@ Global
 		{0C967F29-5ED6-4D5A-8EB7-42C423D44801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C967F29-5ED6-4D5A-8EB7-42C423D44801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C967F29-5ED6-4D5A-8EB7-42C423D44801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429EF541-FCF2-4180-BA12-45C73FC8C988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE28A2B-BFC4-4CA2-B5C5-41A1E5FDE1FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
