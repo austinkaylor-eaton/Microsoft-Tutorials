@@ -4,10 +4,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Communication SMS samples for dotNET ", "Azure Communication SMS samples for dotNET ", "{796395DB-A7EC-4905-A5AD-8060514EA4BE}"
+	ProjectSection(SolutionItems) = preProject
+		Azure Communication SMS samples for dotNET\Azure Communication SMS samples for dotNET.sln = Azure Communication SMS samples for dotNET\Azure Communication SMS samples for dotNET.sln
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Create a minimal Orleans application", "Create a minimal Orleans application", "{7C1ED452-9A1D-45BD-A8EB-0A6FB34B4CE2}"
+	ProjectSection(SolutionItems) = preProject
+		Create a minimal Orleans application\Create a minimal Orleans application.sln = Create a minimal Orleans application\Create a minimal Orleans application.sln
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build your first Orleans app with ASPNET Core", "Build your first Orleans app with ASPNET Core", "{C097B47E-4795-4151-8653-A9856AEAB60D}"
+	ProjectSection(SolutionItems) = preProject
+		Build your first Orleans app with ASPNET Core\Build your first Orleans app with ASPNET Core.sln = Build your first Orleans app with ASPNET Core\Build your first Orleans app with ASPNET Core.sln
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
