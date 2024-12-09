@@ -18,6 +18,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build your first Orleans ap
 		Build your first Orleans app with ASPNET Core\Build your first Orleans app with ASPNET Core.sln = Build your first Orleans app with ASPNET Core\Build your first Orleans app with ASPNET Core.sln
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Custom grain storage", "Custom grain storage", "{AB138442-C7A0-4369-BCF2-2BBB56A3EBCE}"
+	ProjectSection(SolutionItems) = preProject
+		Custom grain storage\Custom grain storage.sln = Custom grain storage\Custom grain storage.sln
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
